@@ -37,3 +37,13 @@ new terminal window. If `flask` is suddenly "not found", that is almost always w
 in a shell where the venv was never activated.
 
 No database. No Docker. One dependency.
+
+## Checking it worked
+
+With the server running, in another terminal:
+
+```bash
+curl http://127.0.0.1:5000/health
+```
+
+Expect `{"status":"ok"}`.
